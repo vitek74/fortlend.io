@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <a href="index.html">На Главную</a>
+    <p style="color: antiquewhite;
+              font-size: 35px">
+        <marquee behavior="alternate"><i>HTML Таблицы : CSS Стили</i></marquee>
+    </p>
+
+    <table class="block3" aria-busy="" border="1" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <th style="width: 48%">
+                <h2 style="color:#FF1493 ">HTML</h2>
+
+            </th>
+
+            <th style="width: 48%">
+                <h2 style="color:#FF1493 ">CSS </h2>
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 48%"> Тег <code class="code">&lt;code&gt; &lt;/code&gt;</code>
+                определяет таблицу HTML. <br>
+                Все элементы таблицы находятся внутри контейнира table.<br>
+                Тег <code class="code">&lt;tr&gt; &lt;/tr&gt;</code> определяет каждую строку таблицы.<br>
+                Тег <code class="code">&lt;th&gt; &lt;/th&gt;</code> определяет каждый заголовок таблицы<br>
+                Тег <code class="code">&lt;td&gt; &lt;/td&gt;</code> определяет каждую ячейку таблицы<br>
+                По умолчанию текст в <code class="code">&lt;th&gt; </code> элементах выделен полужирным шрифтом и центрирован.<br>
+                По умолчанию текст в <code class="code">&lt;td&gt;</code> элементах обычный и выровнен по левому краю.<br>
+                <!--стиль тегов -->
+                <!--<code class="code">&lt;g&gt; &lt;/g&gt;</code> -->
+            </td>
+
+            <td> CSS <big>border -</big>добавляет границы в таблице.<br>
+
+                <!--big стиль кода -->
+
+                <code class="code">table, th, td {<br>
+                    border: 1px solid black;}<br></code>
+
+                <big> border-collapse -</big> границы сжимаются в одну границу<br>
+                <code class="code">table, th, td {<br>
+                    border: 1px solid black;<br>
+                    border-collapse: collapse;}</code><br>
+
+                <big>padding - </big>устанавлимает отступ между содержимым ячейки и ее границами.<br>
+
+                <code class="code">th, td {<br>
+                    padding: 15px;
+                    }</code><br>
+
+                <big>text-align -</big> выравнивает заголовки таблицы по левому краю.<br>
+
+                <code class="code">th {<br>
+                    text-align: left;
+                    }</code><br>
+
+                <big>border-spacing -</big> устанавливает border-spacing.<br>
+
+                <code class="code"> table {<br>
+                    border-spacing: 5px;
+                    }</code><br>
+
+                Примечание: если таблица имеет свернутые границы, <big>border-spacing </big>не действует.<br>
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+
+                <big>rowspan -</big> делает ячейку шириной более одной строки<br>
+                <code class="code"> &lt;table style="width:100%"><br>
+                    &lt;tr><br>
+                    &lt;th>Name: &lt;/th><br>
+                    &lt;td>Bill Gates &lt;/td><br>
+                    &lt;/tr><br>
+                    &lt;tr><br>
+                    &lt;th rowspan="2">Telephone: &lt;/th><br>
+                    &lt;td>55577854 &lt;/td><br>
+                    &lt;/tr><br>
+                    &lt;tr><br>
+                    &lt;td>55577855 /td><br>
+                    &lt;/tr><br>
+                    &lt;/table></code><br>
+                Тег <code class="code">caption - </code>добавляет заголовок к таблицы.<br>
+                <code class="code">&lt;caption>Monthly savings&lt;/caption></code>
+                Примечание.<br> &lt;caption>Тег должен быть вставлен сразу после тега&lt;table>.<br>
+                Чтобы определить специальный стиль для одной конкретной таблицы, добавьте <big>id</big> к таблице.
+                <big>table id="t01"></big>
+
+            </td>
+
+            <td>
+                <big>colspan -</big> ячейка занимает более одного столба<br>
+                <code class="code">&lt;table style="width:100%"><br>
+                    &lt;tr><br>
+                    &lt;th>Name&lt;/th><br>
+                    &lt;th colspan="2">Telephone &lt;&lt;/th<br>
+                    &lt;/tr><br>
+                    &lt;tr><br>
+                    &lt;td>Bill Gates&lt;/td><br>
+                    &lt;td>55577854&lt;/td><br>
+                    &lt;td>55577855&lt;/td><br>
+                    &lt;/tr><br>
+                    &lt;/table></code>
+
+
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+
+                Используйте <code class="code"> &lt;table></code> элемент HTML для определения таблицы.<br>
+                Используйте   <code class="code">&lt;tr></code> элемент HTML для определения строки таблицы.<br>
+                Используйте   <code class="code">&lt;td></code> элемент HTML для определения данных таблицы.<br>
+                Используйте
+                  <code class="code">&lt;th></code> элемент HTML для определения заголовка таблицы.<br>
+                Используйте   <code class="code">&lt;caption></code> элемент HTML для определения заголовка таблицы.<br>
+                Используйте <big>border</big> свойство CSS для определения границы.<br>
+                Используйте <big>border-collapse</big> свойство CSS, чтобы свернуть границы ячеек.<br>
+
+
+            </td>
+            <td>
+                Используйте <big>padding</big> свойство CSS, чтобы добавить отступ к ячейкам.<br>
+                Используйте <big>text-align</big> свойство CSS для выравнивания текста в ячейке.<br>
+                Используйте <big>border-spacing</big> свойство CSS, чтобы установить интервал между ячейками.<br>
+                Используйте <big>colspan</big> атрибут, чтобы ячейка занимала много столбцов.<br>
+                Используйте <big>rowspan</big> атрибут, чтобы ячейка занимала много строк.<br>
+                Используйте <big>id</big> атрибут, чтобы однозначно определить одну таблицу.<br>
+
+
+
+
+            </td>
+
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
