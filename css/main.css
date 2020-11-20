@@ -108,7 +108,7 @@ h5 {
 
 #content {
     margin: 0 auto;
-    width: 930px;
+    width: 1300px;
 }
 
 /* main menu */
@@ -148,9 +148,11 @@ h5 {
 /* колонки */
 .col {
     float: left;
-    width: 286px;
-    margin: 0 35px 40px 0;
+    width: 22%;
+    margin: 0 35px 45px 0;
 }
+
+
 
 .col h3 {
     border-left: 4px solid #B00000;
