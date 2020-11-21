@@ -1,0 +1,55 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+.header {
+    height: 46px;
+    margin: 2px;
+
+    text-align: center;
+
+    background-color: #0522ff;
+    color: #eaff61;
+}
+
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 400px);
+    background-color: #edff86;
+    gap: 5px
+}
+
+.container > div {
+    background-color: #cfffcc;
+}
+
+h3 {
+    color: #1a0eff;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+}
+
+p {
+    font-size: 17px;
+}
+
+
+a {
+    border-radius: 3px;
+    color: #f2ffd7;
+    background-color: #2f8a01;
+    text-decoration: none;
+    background-size: 12px 12px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+
+}
+
+a:hover {
+    background-size: 16px 16px;
+}

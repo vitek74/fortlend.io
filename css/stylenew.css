@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 400px);
+    background-color: #df1af5;
+    gap: 5px
+    
+}
+
+.container > div {
+    background-color: #cfffcc;
+}
+
+p {
+    background: #0000FF;
+}
+
+.code {
+    color: #f22800;
+    font-size: 20px;
+}
+big {
+    color: #FFA500;
+}
+
+.header {
+    background-color: blue;
+    color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+#footer {
+    height: 25px;
+    background-color: #000000;
+    clear: both;
+    display: block;
+
+
+
+
+
