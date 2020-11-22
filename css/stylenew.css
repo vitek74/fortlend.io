@@ -1,26 +1,38 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 400px);
-    background-color: #df1af5;
+    grid-template-rows: repeat(3, auto);
+    background-color: #edff86;
     gap: 5px
     
 }
 
 .container > div {
     background-color: #cfffcc;
+    
 }
+
+
 
 p {
     background: #0000FF;
 }
 
+/*---стилизация кода---*/
 .code {
-    color: #f22800;
-    font-size: 20px;
+    color: #a303ff;
+    font-size: 25px;
 }
+
+/*---значения кода---*/
 big {
-    color: #FFA500;
+    color: #01823f;
 }
 
 .header {
