@@ -2,6 +2,17 @@ body {
     font-family: Verdana, Geneva, sans-serif;
 }
 
+.header {
+    height: 46px;
+    margin: 2px;
+
+    text-align: center;
+
+    background-color: #0522ff;
+    color: #eaff61;
+}
+
+
 
 
 .container {
@@ -32,7 +43,7 @@ p {
 
 /*---значения кода---*/
 big {
-    color: #01823f;
+    color: #ff2b00;
 }
 
 .header {

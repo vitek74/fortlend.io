@@ -1,110 +1,135 @@
 <!doctype html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="yandex-verification" content="cae568b986ed0d2e" />
-    <link rel="stylesheet" href="stylenew.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>УКХ 2</title>
-</head>
+	<head>
+	<meta charset="utf-8">
+	<meta name="yandex-verification" content="cae568b986ed0d2e" />
+	<link rel="stylesheet" href="stylenew.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>УКХ 2</title>
+	</head>
 
-<body>
-    <header><i>HTML Таблицы : CSS Стили</i></header>
-    
-    <!--страница сделана на Flexbox-->
-    <div class="container">
-        <div id="one">Тег <code class="code">&lt;code&gt; &lt;/code&gt;</code>
-                определяет таблицу HTML. <br>
-                Все элементы таблицы находятся внутри контейнира table.<br>
-                Тег <code class="code">&lt;tr&gt; &lt;/tr&gt;</code> определяет каждую строку таблицы.<br>
-                Тег <code class="code">&lt;th&gt; &lt;/th&gt;</code> определяет каждый заголовок таблицы<br>
-                Тег <code class="code">&lt;td&gt; &lt;/td&gt;</code> определяет каждую ячейку таблицы<br>
-                По умолчанию текст в <code class="code">&lt;th&gt; </code> элементах выделен полужирным шрифтом и центрирован.<br>
-                По умолчанию текст в <code class="code">&lt;td&gt;</code> элементах обычный и выровнен по левому краю.<br></div>
-        <div id="two">CSS <big>border -</big>добавляет границы в таблице.<br>
+	<body>
+	<header class="header"><h1><i>HTML Таблицы : CSS Стили</i><h1></header>
+	<a href="index.html">На главную</a>
 
-                <!--big стиль кода -->
+	<!--страница сделана на Flexbox-->
+	<div class="container">
 
-                <code class="code">table, th, td {<br>
-                    border: 1px solid black;}<br></code>
+	<!----Основные теги---->
+	<div id="one"><h2>Основные теги</h2>Тег <code class="code">&lt;table&gt; &lt;/table&gt;</code>
+			определяет таблицу HTML. <br>
+			Все элементы таблицы находятся внутри контейнира table.<br>
+			Тег <code class="code">&lt;tr&gt; &lt;/tr&gt;</code> определяет каждую строку таблицы.<br>
+			Тег <code class="code">&lt;th&gt; &lt;/th&gt;</code> определяет каждый заголовок таблицы<br>
+			Тег <code class="code">&lt;td&gt; &lt;/td&gt;</code> определяет каждую ячейку таблицы<br>
+			По умолчанию текст в <code class="code">&lt;th&gt; </code> элементах выделен полужирным шрифтом и центрирован.<br>
+			По умолчанию текст в <code class="code">&lt;td&gt;</code> элементах обычный и выровнен по левому краю.<br>
+			</div>
+			
+			<!----Границы и отступы---->
+			
+			
+			
+	<div id="two"><h2>Границы и отступы</h2>
+	<code class="code">&lt;border&gt;</code> -
+	добавляет границы в таблице.
 
-                <big> border-collapse -</big> границы сжимаются в одну границу<br>
-                <code class="code">table, th, td {<br>
-                    border: 1px solid black;<br>
-                    border-collapse: collapse;}</code><br>
+			
+				
+			<big>table, th, td {<br>
+				border: 1px solid black;}<br></big>
 
-                <big>padding - </big>устанавлимает отступ между содержимым ячейки и ее границами.<br>
+			 <code class="code">border-collapse</code> - границы сжимаются в одну границу<br>
+			<big>table, th, td {<br>
+				border: 1px solid black;<br>
+				border-collapse: collapse;}</big><br>
 
-                <code class="code">th, td {<br>
-                    padding: 15px;
-                    }</code><br>
+			<code class="code">padding - </code>устанавливает отступ между содержимым ячейки и ее границами.<br>
 
-                <big>text-align -</big> выравнивает заголовки таблицы по левому краю.<br>
+			<big>th, td {<br>
+				padding: 15px;
+				}</big><br>
 
-                <code class="code">th {<br>
-                    text-align: left;
-                    }</code><br>
+			<code class="code">text-align -</code> выравнивает заголовки таблицы по левому краю.<br>
 
-                <big>border-spacing -</big> устанавливает border-spacing.<br>
+			<big>th {<br>
+				text-align: left;
+				}</big><br>
 
-                <code class="code"> table {<br>
-                    border-spacing: 5px;
-                    }</code><br>
+			<code class="code">border-spacing -</code> устанавливает растояние между границами ячеек<br>
 
-                Примечание: если таблица имеет свернутые границы, <big>border-spacing </big>не действует.<br>
-</div>
-        <div id="three"><big>rowspan -</big> делает ячейку шириной более одной строки<br>
-                <code class="code"> &lt;table style="width:100%"><br>
-                    &lt;tr><br>
-                    &lt;th>Name: &lt;/th><br>
-                    &lt;td>Bill Gates &lt;/td><br>
-                    &lt;/tr><br>
-                    &lt;tr><br>
-                    &lt;th rowspan="2">Telephone: &lt;/th><br>
-                    &lt;td>55577854 &lt;/td><br>
-                    &lt;/tr><br>
-                    &lt;tr><br>
-                    &lt;td>55577855 /td><br>
-                    &lt;/tr><br>
-                    &lt;/table></code><br>
-                Тег <code class="code">caption - </code>добавляет заголовок к таблицы.<br>
-                <code class="code">&lt;caption>Monthly savings&lt;/caption></code>
-                Примечание.<br> &lt;caption>Тег должен быть вставлен сразу после тега&lt;table>.<br>
-                Чтобы определить специальный стиль для одной конкретной таблицы, добавьте <big>id</big> к таблице.
-                <big>table id="t01"></big></div>
-        
-        <div id="four"><big>colspan -</big> ячейка занимает более одного столба<br>
-                <code class="code">&lt;table style="width:100%"><br>
-                    &lt;tr><br>
-                    &lt;th>Name&lt;/th><br>
-                    &lt;th colspan="2">Telephone &lt;&lt;/th<br>
-                    &lt;/tr><br>
-                    &lt;tr><br>
-                    &lt;td>Bill Gates&lt;/td><br>
-                    &lt;td>55577854&lt;/td><br>
-                    &lt;td>55577855&lt;/td><br>
-                    &lt;/tr><br>
-                    &lt;/table></code>
-</div>
-        <div id="five"> Используйте <code class="code"> &lt;table></code> элемент HTML для определения таблицы.<br>
-                Используйте   <code class="code">&lt;tr></code> элемент HTML для определения строки таблицы.<br>
-                Используйте   <code class="code">&lt;td></code> элемент HTML для определения данных таблицы.<br>
-                Используйте
-                  <code class="code">&lt;th></code> элемент HTML для определения заголовка таблицы.<br>
-                Используйте   <code class="code">&lt;caption></code> элемент HTML для определения заголовка таблицы.<br>
-                Используйте <big>border</big> свойство CSS для определения границы.<br>
-                Используйте <big>border-collapse</big> свойство CSS, чтобы свернуть границы ячеек.<br>
-</div>
-        <div id="six">Используйте <big>padding</big> свойство CSS, чтобы добавить отступ к ячейкам.<br>
-                Используйте <big>text-align</big> свойство CSS для выравнивания текста в ячейке.<br>
-                Используйте <big>border-spacing</big> свойство CSS, чтобы установить интервал между ячейками.<br>
-                Используйте <big>colspan</big> атрибут, чтобы ячейка занимала много столбцов.<br>
-                Используйте <big>rowspan</big> атрибут, чтобы ячейка занимала много строк.<br>
-                Используйте <big>id</big> атрибут, чтобы однозначно определить одну таблицу.<br>
-</div>
-        <div id="six">Footer</div>
-        <div id="six">Footer</div>
-        <div id="six">Footer</div>
-    </div>
-</body></html>
+			<big> table {<br>
+				border-spacing: 5px;
+				}</big><br>
+
+			Примечание: если таблица имеет свернутые границы, <code class="code">border-spacing </code>не действует.<br>
+	</div>
+
+		<!----Свойства ячейки---->
+	<div id="three"><h2>Свойства ячейки</h2><code class="code">rowspan -</code> делает ячейку шириной более одной строки<br>
+			<big> &lt;table style="width:100%"><br>
+				&lt;tr><br>
+				&lt;th>Name: &lt;/th><br>
+				&lt;td>Bill Gates &lt;/td><br>
+				&lt;/tr><br>
+				&lt;tr><br>
+				&lt;th rowspan="2">Telephone: &lt;/th><br>
+				&lt;td>55577854 &lt;/td><br>
+				&lt;/tr><br>
+				&lt;tr><br>
+				&lt;td>55577855 /td><br>
+				&lt;/tr><br>
+				&lt;/table></big><br>
+			Тег <code class="code">caption - </code>добавляет заголовок к таблицы.<br>
+			<big>&lt;caption>Monthly savings&lt;/caption></big>
+			Примечание.<br><code class="code"> &lt;caption&gt;</code>Тег должен быть вставлен сразу после тега<code class="code">&lt;table&gt;.</code><br>
+			Чтобы определить специальный стиль для одной конкретной таблицы, добавьте <big>id</big> к таблице.
+			<big>table id="t01"></big></div>
+			
+	<!----Свойства ячейки---->
+
+	<div id="four"><h2>Свойства ячейки</h2><code class="code">colspan -</code> ячейка занимает более одного столба<br>
+			<big>&lt;table style="width:100%"><br>
+				&lt;tr><br>
+				&lt;th>Name&lt;/th><br>
+				&lt;th colspan="2">Telephone &lt;&lt;/th<br>
+				&lt;/tr><br>
+				&lt;tr><br>
+				&lt;td>Bill Gates&lt;/td><br>
+				&lt;td>55577854&lt;/td><br>
+				&lt;td>55577855&lt;/td><br>
+				&lt;/tr><br>
+				&lt;/table></big>
+	</div>
+	<!----Основные свойства---->
+
+	<div id="five"> 
+	<h2>Основные свойства </h2>
+	<code class="code">border-collapse -</code> Определяет будут ли границы рамки объединены в одну.<br>
+	<code class="code">border-spacing -</code> Определяет расстояние между границами смежных ячеек и общей рамкой таблицы.<br>
+	<code class="code">caption-side -</code> Указывает расположение заголовка таблицы<br>
+	<code class="code">empty-cells -</code> Регулирует видимость пустых ячеек в таблице.<br>
+	<code class="code">table-layout -</code> Задает алгоритм использования макета таблицы.
+	</div>
+	<div id="six">
+	<h2>flexbox</h2>
+	<big>align-content -</big> Задаёт вертикальное выравнивание flex-элементов для flex-контейнеров с многострочным содержимым<br>
+	<big>align-items -</big> Вертикальное выравнивание flex-элементов внутри flex-контейнера.<br>
+	<big>align-self -</big> Вертикальное выравнивание flex-элемента.<br>
+	<big>flex -</big> Определяет ширину, сжатие и растяжение для flex-элемента.<br>
+	<big>flex-basis -</big> Указывает ширину для flex-элемента.<br>
+	<big>flex-direction -</big> Направление расположения flex-элементов.<br>
+	<big>flex-flow -</big> Направление расположения и возможность переноса для flex-элементов.<br>
+	<big>flex-grow -</big> Определяет коэффициент растяжения flex-элемента.<br>
+	<big>flex-shrink -</big> Определяет коэффициент сжатия flex-элемента.<br>
+	<big>flex-wrap -</big> Определяет возможность переноса flex-элементов.<br>
+	<big>justify-content -</big> Горизонтальное выравнивание flex-элементов.<br>
+	<big>order -</big> Определяет порядок вывода flex-элементов.
+	</div>
+	<div id="six">Footer</div>
+	<div id="six">Footer</div>
+	<div id="six">Footer</div>
+	</div>
+	</body>
+</html>
